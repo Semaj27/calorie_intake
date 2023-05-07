@@ -1,8 +1,9 @@
 from dataclasses import dataclass
-
 import numpy as np
-import matplotlib as plt
+import matplotlib.pyplot as plt
 
+# Set the backend to use for displaying graphs
+plt.switch_backend('TkAgg')
 
 CALORIE_GOAL_LIMIT = 3000   # kcal
 PROTEIN_GOAL= 180   # grams
@@ -47,10 +48,10 @@ while not done:
         fats_sum = sum(food.fat for food in today)
         carbs_sum = sum(food.carbs for food in today)
 
-
         fig, axs = plt.subplots(2,2)
         axs[0, 0].pie([protein_sum, fats_sum, carbs_sum], labels=["Proteins", "Fats", "Carbs"], autopct = "%1.1f%%")
         axs[0, 0].set_title("Macronutrients Distribution")
 
         fig.tight_layout()
-        plt.show
+        print(plt.get_backend())
+        plt.show()
