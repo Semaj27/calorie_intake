@@ -5,10 +5,10 @@ import matplotlib.pyplot as plt
 # Set the backend to use for displaying graphs
 plt.switch_backend('TkAgg')
 
-CALORIE_GOAL_LIMIT = 3000   # kcal
-PROTEIN_GOAL= 180   # grams
-FAT_GOAL = 80   # grams
-CARB_GOAL = 300   # grams
+CALORIE_GOAL_LIMIT = 1500   # kcal
+PROTEIN_GOAL= 112   # grams
+FAT_GOAL = 50   # grams
+CARB_GOAL = 150   # grams
 
 today = []
 
@@ -25,7 +25,7 @@ done = False
 
 while not done:
     print(""" 
-    (1) Add a new food 
+    (1) Add a new meal 
     (2) Visualize progress
     (q) Quit
     """)
@@ -33,7 +33,7 @@ while not done:
     choice = input("Choose an option: ")
 
     if choice == "1":
-        print("Adding a new food!")
+        print("Adding a new meal!")
         name = input("Name: ")
         calories = int(input("Calories: "))
         protien = int(input("Proteins: "))
