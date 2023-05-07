@@ -29,7 +29,7 @@ while not done:
     (q) Quit
     """)
 
-    choice = input("Choose an option")
+    choice = input("Choose an option: ")
 
     if choice == "1":
         print("Adding a new food!")
