@@ -51,6 +51,10 @@ while not done:
         fig, axs = plt.subplots(2,2)
         axs[0, 0].pie([protein_sum, fats_sum, carbs_sum], labels=["Proteins", "Fats", "Carbs"], autopct = "%1.1f%%")
         axs[0, 0].set_title("Macronutrients Distribution")
+        axs[0, 1].bar([0, 1, 2], [protein_sum, fats_sum, carbs_sum], width=0.4)
+        axs[0, 1].bar([0.5, 1.5, 2.5], [PROTEIN_GOAL, FAT_GOAL, CARB_GOAL], width=0.4)
+        axs[0, 1].set_title("Macronutrients Progress")
+
 
         fig.tight_layout()
         print(plt.get_backend())
