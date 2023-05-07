@@ -41,16 +41,16 @@ while not done:
         food = Food(name, calories, protien, fats, carbs)
         today.append(food)
         print("Successfully added!")
-
     elif choice == "2":
         calories_sum = sum(food.calories for food in today)
-        protien_sum = sum(food.protien for food in today)
+        protein_sum = sum(food.protein for food in today)
         fats_sum = sum(food.fat for food in today)
         carbs_sum = sum(food.carbs for food in today)
 
 
         fig, axs = plt.subplots(2,2)
-        axs[0, 0].pie([protien_sum, fats_sum, carbs_sum], labels=["Proteins", "Fats", "Carbs"], autopct = "%1.1f%%")
+        axs[0, 0].pie([protein_sum, fats_sum, carbs_sum], labels=["Proteins", "Fats", "Carbs"], autopct = "%1.1f%%")
         axs[0, 0].set_title("Macronutrients Distribution")
+
         fig.tight_layout()
         plt.show
