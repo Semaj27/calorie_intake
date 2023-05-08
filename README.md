@@ -27,18 +27,22 @@ When the user chooses to add a new meal, they are prompted to input the name, ca
 
 <h2>Chart Break Down</h2>
  The first (Top-Left)chart is a pie chart showing the distribution of protein, fat, and carbohydrates in the foods eaten today.
+ <br />
  ![Top-Left](https://user-images.githubusercontent.com/102255108/236709899-4635e1e2-a569-4a6a-aa79-febd21ecf7df.png)
 
  <br />
  The second (Top-Right)chart is a bar chart showing the progress made towards meeting the daily protein, fat, and carbohydrate goals.
+ <br />
  ![Top-Right](https://user-images.githubusercontent.com/102255108/236709908-69d81e55-8eb6-400e-981f-0d84945141e1.png)
  
  <br />
  The third (Bettom-Left)chart is a pie chart showing the progress made towards meeting the daily calorie goal. 
+ <br />
  ![Bottom-Left](https://user-images.githubusercontent.com/102255108/236709919-f5d9d11a-db96-48e4-b891-e5734d1d2fe6.png)
  
  <br />
  The fourth (Bettom-Right)chart is a line graph showing the progress towards meeting the daily calorie goal over time.
+ <br />
  ![Bottom-Right](https://user-images.githubusercontent.com/102255108/236709953-4ca931b1-0d97-4dda-81dd-1a56d0966fc8.png)
 
  
